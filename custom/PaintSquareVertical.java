@@ -1,7 +1,6 @@
 import javax.swing.*;
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.BorderLayout;
 
 public class PaintSquareVertical
 {
@@ -16,25 +15,24 @@ public class PaintSquareVertical
 
       // set BorderLayout on mainPanel to control
       // where the squares are positioned
-      mainPanel.setLayout(new BorderLayout());
+      mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
 
       // create a square with default color
       ColoredSquare blueSquare = new ColoredSquare(200);
-      // add blue square to the main panel at the top (NORTH)
-      mainPanel.add(blueSquare, BorderLayout.NORTH);
+      mainPanel.add(blueSquare);
 
       // create a red square
       ColoredSquare redSquare = new ColoredSquare(200);
       redSquare.setColor(Color.RED);
       // add red square to the main panel at the bottom (SOUTH)
       // You can also use BorderLayout.EAST and BorderLayout.WEST
-      mainPanel.add(redSquare, BorderLayout.SOUTH);
+      mainPanel.add(redSquare);
 
       // create a green square
       ColoredSquare greenSquare = new ColoredSquare(200);
       greenSquare.setColor(Color.GREEN);
       // add green square to the main panel in the middle (CENTER)
-      mainPanel.add(greenSquare, BorderLayout.CENTER);
+      mainPanel.add(greenSquare);
 
       // add the main panel to the top-level container
       frame.add(mainPanel);
