@@ -1,12 +1,12 @@
 import javax.swing.*;
 import java.awt.Dimension;
 
-public class ILoveSwing
+public class FirstLabel
 {
    public static void main(String[] args)
    {
       // JFrame is a top-level container, which can be visible on screen
-      JFrame frame = new JFrame("My First Frame");
+      JFrame frame = new JFrame("My First Label");
       // operation to do when the window is closed
       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
